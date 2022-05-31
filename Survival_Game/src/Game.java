@@ -10,10 +10,10 @@ public class Game {
 		Scanner scan = new Scanner(System.in);
 		
 		System.out.println("Macera Oyununa Hosgeldiniz!");
-		System.out.println("Oyuna baslamadan once isminizi giriniz: Reines");// ln'i sonra sil
-		//String playerName = scan.nextLine();
+		System.out.print("Oyuna baslamadan once isminizi giriniz: Reines");// ln'i sonra sil
+		String playerName = scan.nextLine();
 		
-		player = new Player("Reines");
+		player = new Player(playerName);
 		player.selectCha();
 		
 		start();
